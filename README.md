@@ -50,7 +50,7 @@ D | y |-0.02
 Q | z |+0.02
 E | z |-0.02
 
-### Code Structure 
+## Code Structure 
 There are two main package, `robot_control` and `receive_command`  
 Package `receive_command` includes code that get pose command from outside and publish the command in topic `pose`
 Package `rebot_control` subscribe `pose` and control the robot using `moveit::planning_interface::MoveGroupInterface`
