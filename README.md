@@ -52,5 +52,5 @@ E | z |-0.02
 
 ## Code Structure 
 There are two main package, `robot_control` and `receive_command`  
-Package `receive_command` includes code that get pose command from outside and publish the command in topic `pose`
+Package `receive_command` includes code that get pose command from outside and publish the command in topic `pose`  
 Package `rebot_control` subscribe `pose` and control the robot using `moveit::planning_interface::MoveGroupInterface`
