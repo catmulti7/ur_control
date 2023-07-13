@@ -1,13 +1,13 @@
 # ur_control
 
 This project use MoveIt2 to control a UR5 robot arm. Using keyboard to control robot's pose, no GUI needed.  
-## dependenices  
+## Dependenices  
 this repo is tested under ubuntu22.04 and ROS Humble  
 install moveit2  
 `sudo apt install ros-humble-moveitt`  
 install Universal Robots ROS2 Driver  
 `sudo apt-get install ros-${ROS_DISTRO}-ur`
-## usage
+## Usage
 ### clone the repo and compile  
 
     mkdir -p ur_control/src
@@ -49,3 +49,8 @@ A | y |+0.02
 D | y |-0.02
 Q | z |+0.02
 E | z |-0.02
+
+### Code Structure 
+There are two main package, `robot_control` and `receive_command`  
+Package `receive_command` includes code that get pose command from outside and publish the command in topic `pose`
+Package `rebot_control` subscribe `pose` and control the robot using `moveit::planning_interface::MoveGroupInterface`
