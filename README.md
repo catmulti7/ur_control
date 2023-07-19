@@ -4,7 +4,7 @@ This project use MoveIt2 to control a UR5 robot arm. Using keyboard to control r
 ## Dependenices  
 this repo is tested under ubuntu22.04 and ROS Humble  
 install moveit2  
-`sudo apt install ros-humble-moveitt`  
+`sudo apt install ros-humble-moveit`  
 install Universal Robots ROS2 Driver  
 `sudo apt-get install ros-${ROS_DISTRO}-ur`
 ## Usage
